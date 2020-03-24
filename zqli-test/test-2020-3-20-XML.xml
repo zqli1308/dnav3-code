@@ -1,0 +1,20 @@
+<?xml version ="1.0" encoding="UTF-8"?>
+<server>
+  <pool>http<pool>
+  <description>My virtual server test<description>
+  <name>http-cirtual<name>
+  <mask>255.255.255.255<maske>
+  <profile>
+
+    <name>http<name>
+    <kind>ltm:virtual:profile<kind>
+
+    <name>tcp<name>
+    <kind>ltm:virtual:profile<kind>
+
+  <profile>
+  <ipProtocol>tcp<ipProtocol>
+  <sourceAddressTranslation>{"type":"automap"}<sourceAddressTranslation>
+  <kind>tm:ltm:virtual:virtualstate<kind
+  <destination>1.1.1.3:80<destination>
+<server>
